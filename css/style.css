@@ -25,11 +25,32 @@ nav{
 
 nav .logo{
     font-size: 20px;
+    display: flex;
 }
 
 nav .logo:hover{
     color: rgb(0, 0, 0);
-    transition-duration: 0.25s;
+    transition: all 1s;
+}
+
+nav .logo h4:nth-child(1){
+    transition: all 1s;
+}
+
+nav .logo h4:nth-child(1):hover{
+    margin-right: 30px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+nav .logo h4:nth-child(2){
+    transition: all 1s;
+}
+
+nav .logo h4:nth-child(2):hover{
+    cursor: pointer;
+    margin-left: 20px;
+    transition: all 1s;
 }
 
 nav ul{
@@ -123,9 +144,10 @@ nav ul a:hover{
 
 /* responsif brekpoint mobile */
 @media screen and ( max-width: 576px ) {
+
     nav ul{
         position: absolute;
-        right: 0;
+        right: 30px;
         width: 130px;
         flex-direction: column;
         background-color: white;

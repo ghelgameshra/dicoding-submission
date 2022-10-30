@@ -42,3 +42,9 @@ fbLink.href = "https://www.facebook.com/ghelgameshra.ghelgameshra/";
 var igLink = document.getElementById('ig-link');
 igLink.href = "https://www.instagram.com/ghelgameshra?r=nametag";
 
+var twitterLink = document.getElementById('twitter-link');
+twitterLink.href = "https://twitter.com/ghelgameshra";
+
+var githubLink = document.getElementById('github-link');
+githubLink.href = "https://github.com/ghelgameshra";
+

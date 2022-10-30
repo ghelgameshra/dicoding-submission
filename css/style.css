@@ -226,6 +226,76 @@ aside div .accordion button{
     width: 100%;
 }
 
+section{
+    margin-top: 30px;
+    background-color: #333333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+section h2{
+    padding: 25px;
+    text-align: center;
+    font-size: 14;
+    font-weight: 400;
+}
+
+section .all-card{
+    margin-top: 25px;
+    display: flex;
+    left: 0;
+    justify-content: flex-start;
+    width: 80%;
+}
+
+section .all-card .card{
+    margin: 15px;
+    border-radius: 10px;
+    transition: all 1s;
+    width: 30%;
+    background-color: #202020;
+}
+
+section .all-card .card:hover{
+    scale: 1.1;
+    transition: all 1s;
+    cursor: pointer;
+    background: #383838;
+}
+
+section .all-card .card h4{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+section .all-card .card p{
+    text-align: justify;
+    padding: 20px;
+}
+
+section .all-card .card span{
+    color: #333333;
+    border-radius: 10px 10px 0px 0px;
+    display: block;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+section .all-card .card span img{
+    width: 35%;
+}
+
+section .all-card .card span:hover{
+    background-color: #c2c2c2;
+}
+
+
+
 /* accordion */
 .accordion__button{
     display: block;
@@ -281,9 +351,6 @@ aside div .accordion button{
 
 
 
-
-
-
 /* responsif brekpoint */
 @media screen and ( max-width: 768px ) {
     main article span h2{
@@ -294,8 +361,12 @@ aside div .accordion button{
         top: 30px;
     }
 
-    main article span h3{
+    main article span h2{
         font-size: 20px;
+    }
+
+    main article span h3{
+        font-size: 18px;
     }
     
     main article span p{
@@ -335,17 +406,17 @@ aside div .accordion button{
     }
 
     main article span{
-        top: 18px;
+        top: 25px;
     }
 
     main article span img{
-        width: 18%;
+        width: 20%;
         border-radius: 100%;
     
     }
 
     main article span h2{
-        font-size: 16px;
+        font-size: 20px;
     }
     
     main article span h3{
@@ -354,5 +425,20 @@ aside div .accordion button{
     
     main article span p{
         font-size: 10px;
+        word-spacing: -2px;
     }
+
+    section .all-card{
+        flex-direction: column;
+        left: 0;
+        justify-content: center;
+        margin: 0px auto;
+        right: 0;
+        width: 75%;
+    }
+    
+    section .all-card .card{
+        width: 90%;
+    }
+
 }

@@ -24,3 +24,21 @@ document.querySelectorAll('.accordion__button').forEach( button => {
 
     });
 } );
+
+
+// data
+let namaSaya = "RIZKY ANDRIAWAN";
+document.getElementById('nama').innerHTML = namaSaya;
+
+let mahasiswa = "Mahasiswa Teknik Informatika";
+document.getElementById('mahasiswa').innerHTML = mahasiswa;
+
+let universitas = "[Universitas Islam Raden Rahmat Malang]";
+document.getElementById('univ').innerHTML = universitas;
+
+var fbLink = document.getElementById('fb-link');
+fbLink.href = "https://www.facebook.com/ghelgameshra.ghelgameshra/";
+
+var igLink = document.getElementById('ig-link');
+igLink.href = "https://www.instagram.com/ghelgameshra?r=nametag";
+
